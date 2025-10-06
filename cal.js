@@ -1,17 +1,12 @@
 let valEl = document.getElementById("val")
 let resEl = document.getElementById("res") 
 
-console.log(Res.length);
-
 function backspace(){ 
   let Res = resEl.innerText;
   if(Res.trim().length === 0){
   let value = valEl.innerText;
-  console.log(value)
    let slicedValue = value.slice(0,-1); 
-    console.log(slicedValue);  
     valEl.innerText = slicedValue;
-    console.log(Res.length);
   }
 }
 function clearer() {
